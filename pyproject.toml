@@ -1,0 +1,39 @@
+[project]
+name = "datasette-alerts-desktop"
+version = "0.1.0a1"
+description = ""
+readme = "README.md"
+authors = [{name = "Alex Garcia"}]
+license = "Apache-2.0"
+classifiers=[
+    "Framework :: Datasette"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "datasette>=1a19",
+    "datasette-alerts>=0.0.1a7",
+    "notify-py",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/datasette/datasette-alerts-desktop"
+Changelog = "https://github.com/datasette/datasette-alerts-desktop/releases"
+Issues = "https://github.com/datasette/datasette-alerts-desktop/issues"
+CI = "https://github.com/datasette/datasette-alerts-desktop/actions"
+
+[project.entry-points.datasette]
+alerts_desktop = "datasette_alerts_desktop"
+
+[dependency-groups]
+dev = ["pytest", "pytest-asyncio"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.setuptools.package-data]
+datasette_alerts_desktop = ["static/*", "templates/*"]
