@@ -1,6 +1,6 @@
 [project]
 name = "datasette-alerts-desktop"
-version = "0.1.0a3"
+version = "0.1.0a4"
 description = ""
 readme = "README.md"
 authors = [{name = "Alex Garcia"}]
@@ -11,7 +11,7 @@ classifiers=[
 requires-python = ">=3.10"
 dependencies = [
     "datasette>=1a19",
-    "datasette-alerts>=0.0.1a7",
+    "datasette-alerts>=0.0.1a8",
     "notify-py",
 ]
 
