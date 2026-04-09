@@ -1,6 +1,6 @@
 [project]
 name = "datasette-alerts-desktop"
-version = "0.1.0a4"
+version = "0.1.0a5"
 description = ""
 readme = "README.md"
 authors = [{name = "Alex Garcia"}]
